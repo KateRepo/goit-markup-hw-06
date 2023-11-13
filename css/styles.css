@@ -337,12 +337,13 @@ button {
 }
 
 .hero-title {
-  max-width: 320px;
+  max-width: 169px;
   margin: 0 auto 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
+  text-transform: capitalize;
   color: var(--primary-background-color);
 }
 
@@ -352,6 +353,7 @@ button {
     line-height: 1.07;
     max-width: 496px;
     margin: 0 auto 36px auto;
+    text-transform: none;
   }
 }
 
@@ -362,7 +364,7 @@ button {
 }
 
 .hero-button {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -646,7 +648,7 @@ button {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 16px;
+  gap: 48px;
 }
 
 @media screen and (min-width: 768px) {
@@ -655,12 +657,6 @@ button {
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
-  }
-}
-
-@media screen and (max-width: 1157px) {
-  .portfolio-item:not(:last-child) {
-    margin-bottom: 72px;
   }
 }
 
@@ -1097,7 +1093,7 @@ button {
 }
 
 .mobile-header-wrapper {
-  margin-top: 168px;
+  margin-top: auto;
   margin-bottom: 48px;
 }
 
